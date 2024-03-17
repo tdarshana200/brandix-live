@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="user-scalable=no"/>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Main Display Mobile
+</title>
+        <link href="css/auto_format.css" rel="stylesheet"/>
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/canvasjs.min.js"></script>
+        <script src="js/main.js"></script>
+        <link href="../css/fontawesome.css" rel="stylesheet"/>
+        <link href="../css/brands.css" rel="stylesheet"/>
+        <link href="../css/solid.css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+        <script src="{{ asset('assets/js/main.js') }}"></script>
+    </head>
+    <body>
+        <form method="post" action="#" id="form1">
+            <div class="aspNetHidden">
+                <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""/>
+                <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""/>
+                <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value=""/>
+            </div>
+            <script type="text/javascript">
+                //<![CDATA[
+                var theForm = document.forms['form1'];
+                if (!theForm) {
+                    theForm = document.form1;
+                }
+                function __doPostBack(eventTarget, eventArgument) {
+                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                        theForm.__EVENTTARGET.value = eventTarget;
+                        theForm.__EVENTARGUMENT.value = eventArgument;
+                        theForm.submit();
+                    }
+                }
+                //]]>
+            </script>
+            <div class="aspNetHidden">
+                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="08C87685"/>
+                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="GNtmGZEmiGjEND4rWfsy6z4aCTE5UV+vW6mAe68zrAiC/zGUx/y/F0Kwd2QC0za4H598hyJIjheEpbsenCjnSkJ8LGBN7uZ1yD8GebMiwhWnmqgkRqIuxvzbQFnyY4W4xs/9iRPX09IItVxLd/rVlE6QPCQDIFn1QzF74+ZZ0uA1nMF6lbIwudgfGisz+aa+"/>
+            </div>
+            <div id="loader" style="display: none; z-index: 20; width: 100px; height: 100px; background-image: url('../images/loading.gif'); background-position: center; background-repeat: no-repeat; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; background-size: contain;"></div>
+            <div id="full" style="display: none; position: fixed; width: 100%; height: 100%; left: 0; top: 0; background: rgba(51,51,51,0.9); z-index: 19;"></div>
+            <div id="MainDiv" class="divScroll" style="position: fixed; top: 60px; left: 0px; width: 100%; height: 92vh; max-height: 768px; overflow-y: auto; overflow-x: auto;" align="center">
+            <table border="0" style="border-collapse:separate; color:#fff; text-shadow:0px 0px 5px #000; width:99%; text-align:center; height:100%; font-size:2.5vw;">
+                   
+                    <tr>
+                        <th style="width:3vw;"></th>
+                        <th title='Current Style : LW9EQKS SMV : 10.82 TMs : 48' style="color:#F4D03F; text-shadow:1px 1px 1px #000; font-size:1.4vw;">M131</th>
+                        <th title='Current Style : LW1ESAS SMV : 23.20 TMs : 49' style="color:#F4D03F; text-shadow:1px 1px 1px #000; font-size:1.4vw;">M145</th>
+                        <th title='Current Style : LW2EB9S SMV : 17.80 TMs : 46' style="color:#F4D03F; text-shadow:1px 1px 1px #000; font-size:1.4vw;">M147</th>
+                        <th title='Current Style : LW9DEKS SMV : 6.35 TMs : 48' style="color:#F4D03F; text-shadow:1px 1px 1px #000; font-size:1.4vw;">M149</th>
+                        <th title='Current Style : LW2EBHS SMV : 14.21 TMs : 48' style="color:#F4D03F; text-shadow:1px 1px 1px #000; font-size:1.4vw;">M152</th>
+                        <th title='Current Style : LW2CTIS SMV : 12.30 TMs : 44' style="color:#F4D03F; text-shadow:1px 1px 1px #000; font-size:1.4vw;">M154</th>
+                        <th title='Current Style : LW9DTYS SMV : 6.40 TMs : 48' style="color:#F4D03F; text-shadow:1px 1px 1px #000; font-size:1.4vw;">M156</th>
+                        <th style="color:#2E86C1; text-shadow:1px 1px 1px #000; font-size:1.5vw;" id='td_tot'>PCs</th>
+                    </tr>
+                    <tr>
+                        <th style="color:#7FB3D5; text-shadow:1px 1px 1px #000; text-align:left;">1.</th>
+                        <td title='Plan Pcs : 100' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">100</td>
+                        <td title='Plan Pcs : 35' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">35</td>
+                        <td title='Plan Pcs : 70' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">70</td>
+                        <td title='Plan Pcs : 150' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">150</td>
+                        <td title='Plan Pcs : 60' class="w3-animate-zoom" style="background-color:#d54333; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">30</td>
+                        <td title='Plan Pcs : 100' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">100</td>
+                        <td title='Plan Pcs : 165' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">165</td>
+                        <td class="w3-animate-zoom" style="background-color:#2E86C1; border-radius:10px; font-size:1.5vw; width:13.86vw;" id='td_1'>650</td>
+                    </tr>
+                    {{--<tr>
+                        <th style="color:#7FB3D5; text-shadow:1px 1px 1px #000; text-align:left;">2.</th>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#d54333; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">170</td>
+                        <td title='Plan Pcs : 60' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">60</td>
+                        <td title='Plan Pcs : 140' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">140</td>
+                        <td title='Plan Pcs : 300' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">300</td>
+                        <td title='Plan Pcs : 120' class="w3-animate-zoom" style="background-color:#d54333; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">100</td>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">200</td>
+                        <td title='Plan Pcs : 330' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">330</td>
+                        <td class="w3-animate-zoom" style="background-color:#2E86C1; border-radius:10px; font-size:1.5vw; width:13.86vw;" id='td_2'>1300</td>
+                    </tr>
+                    <tr>
+                        <th style="color:#7FB3D5; text-shadow:1px 1px 1px #000; text-align:left;">3.</th>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">200</td>
+                        <td title='Plan Pcs : 60' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">60</td>
+                        <td title='Plan Pcs : 140' class="w3-animate-zoom" style="background-color:#d54333; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">130</td>
+                        <td title='Plan Pcs : 300' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">300</td>
+                        <td title='Plan Pcs : 120' class="w3-animate-zoom" style="background-color:#d54333; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">100</td>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">200</td>
+                        <td title='Plan Pcs : 330' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">330</td>
+                        <td class="w3-animate-zoom" style="background-color:#2E86C1; border-radius:10px; font-size:1.5vw; width:13.86vw;" id='td_3'>1320</td>
+                    </tr>
+                    <tr>
+                        <th style="color:#7FB3D5; text-shadow:1px 1px 1px #000; text-align:left;">4.</th>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#d54333; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">140</td>
+                        <td title='Plan Pcs : 60' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">60</td>
+                        <td title='Plan Pcs : 140' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">140</td>
+                        <td title='Plan Pcs : 300' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">300</td>
+                        <td title='Plan Pcs : 120' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">120</td>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">200</td>
+                        <td title='Plan Pcs : 330' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">330</td>
+                        <td class="w3-animate-zoom" style="background-color:#2E86C1; border-radius:10px; font-size:1.5vw; width:13.86vw;" id='td_4'>1290</td>
+                    </tr>
+                    <tr>
+                        <th style="color:#7FB3D5; text-shadow:1px 1px 1px #000; text-align:left;">5.</th>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#d54333; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">110</td>
+                        <td title='Plan Pcs : 60' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">60</td>
+                        <td title='Plan Pcs : 140' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">140</td>
+                        <td title='Plan Pcs : 300' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">300</td>
+                        <td title='Plan Pcs : 120' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">120</td>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">200</td>
+                        <td title='Plan Pcs : 330' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">330</td>
+                        <td class="w3-animate-zoom" style="background-color:#2E86C1; border-radius:10px; font-size:1.5vw; width:13.86vw;" id='td_5'>1260</td>
+                    </tr>
+                    <tr>
+                        <th style="color:#7FB3D5; text-shadow:1px 1px 1px #000; text-align:left;">6.</th>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">200</td>
+                        <td title='Plan Pcs : 60' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">60</td>
+                        <td title='Plan Pcs : 140' class="w3-animate-zoom" style="background-color:#d54333; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">120</td>
+                        <td title='Plan Pcs : 300' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">300</td>
+                        <td title='Plan Pcs : 120' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">120</td>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#d54333; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">165</td>
+                        <td title='Plan Pcs : 330' class="w3-animate-zoom" style="background-color:#074d25; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">330</td>
+                        <td class="w3-animate-zoom" style="background-color:#2E86C1; border-radius:10px; font-size:1.5vw; width:13.86vw;" id='td_6'>1295</td>
+                    </tr>
+                    <tr>
+                        <th style="color:#7FB3D5; text-shadow:1px 1px 1px #000; text-align:left;">7.</th>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#757575; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 60' class="w3-animate-zoom" style="background-color:#757575; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 140' class="w3-animate-zoom" style="background-color:#757575; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 300' class="w3-animate-zoom" style="background-color:#757575; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 120' class="w3-animate-zoom" style="background-color:#757575; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#757575; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">47</td>
+                        <td title='Plan Pcs : 330' class="w3-animate-zoom" style="background-color:#757575; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td class="w3-animate-fading" style="background-color:#2E86C1; border-radius:10px; font-size:1.5vw; width:13.86vw;" id='td_7'>47</td>
+                    </tr>
+                    <tr>
+                        <th style="color:#7FB3D5; text-shadow:1px 1px 1px #000; text-align:left;">8.</th>
+                        <td title='Plan Pcs : 180' class="w3-animate-zoom" style="background-color:#424242; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 60' class="w3-animate-zoom" style="background-color:#424242; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 140' class="w3-animate-zoom" style="background-color:#424242; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 300' class="w3-animate-zoom" style="background-color:#424242; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 120' class="w3-animate-zoom" style="background-color:#424242; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 200' class="w3-animate-zoom" style="background-color:#424242; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td title='Plan Pcs : 330' class="w3-animate-zoom" style="background-color:#424242; border-radius:10px; font-size:2.2vw; width:13.86vw; padding-left:5px; padding-right:5px;">-</td>
+                        <td class="w3-animate-zoom" style="background-color:#2E86C1; border-radius:10px; font-size:1.5vw; width:13.86vw;" id='td_8'>0</td>
+                    </tr>--}}
+                    <tr>
+                        <td style="font-size:0.4vw;">&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id='td_PlanEff' style="font-size:0.9vw; color:#F4D03F; text-align:left;">Hourly Plan : </td>
+                        <td id='tdPlan_M131' style="background-color:#000; border-radius:10px; font-size:1.2vw;">202</td>
+                        <td id='tdPlan_M145' style="background-color:#000; border-radius:10px; font-size:1.2vw;">67</td>
+                        <td id='tdPlan_M147' style="background-color:#000; border-radius:10px; font-size:1.2vw;">142</td>
+                        <td id='tdPlan_M149' style="background-color:#000; border-radius:10px; font-size:1.2vw;">303</td>
+                        <td id='tdPlan_M152' style="background-color:#000; border-radius:10px; font-size:1.2vw;">121</td>
+                        <td id='tdPlan_M154' style="background-color:#000; border-radius:10px; font-size:1.2vw;">202</td>
+                        <td id='tdPlan_M156' style="background-color:#000; border-radius:10px; font-size:1.2vw;">344</td>
+                        <td style="background-color:#2E86C1; border-radius:10px; font-size:1.2vw;">1381</td>
+                    </tr>
+                    <tr>
+                        <td id='tdCumActual' style="font-size:1vw; color:#F4D03F; text-align:left;">Cum Actual : </td>
+                        <td id="CumAct_M131" style="background-color:#2471A3; border-radius:10px; font-size:1.2vw;">920</td>
+                        <td id="CumAct_M145" style="background-color:#2471A3; border-radius:10px; font-size:1.2vw;">335</td>
+                        <td id="CumAct_M147" style="background-color:#2471A3; border-radius:10px; font-size:1.2vw;">740</td>
+                        <td id="CumAct_M149" style="background-color:#2471A3; border-radius:10px; font-size:1.2vw;">1650</td>
+                        <td id="CumAct_M152" style="background-color:#2471A3; border-radius:10px; font-size:1.2vw;">590</td>
+                        <td id="CumAct_M154" style="background-color:#2471A3; border-radius:10px; font-size:1.2vw;">1112</td>
+                        <td id="CumAct_M156" style="background-color:#2471A3; border-radius:10px; font-size:1.2vw;">1815</td>
+                        <td style="background-color:#2E86C1; border-radius:10px; font-size:1.2vw;">7162</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:0.9vw; color:#F4D03F; text-align:left;">Cum Plan: </td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">1187</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">361</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">831</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">1780</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">712</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">1187</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">1958</td>
+                        <td style="background-color:#2E86C1; border-radius:10px; font-size:1.2vw;">8016</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:1vw; color:#F4D03F; text-align:left;">Daily Plan : </td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">1500</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">500</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">1050</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">2250</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">900</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">1500</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw;">2550</td>
+                        <td style="background-color:#2E86C1; border-radius:10px; font-size:1vw;">10250</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:0.9vw; color:#F4D03F; text-align:left;">Variance(Pcs): </td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw; color:#FF0000;">267</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw; color:#FF0000;">26</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw; color:#FF0000;">91</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw; color:#FF0000;">130</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw; color:#FF0000;">122</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw; color:#FF0000;">75</td>
+                        <td style="background-color:#000; border-radius:10px; font-size:1vw; color:#FF0000;">143</td>
+                        <td style="background-color:#2E86C1; border-radius:10px; font-size:1.2vw;">-853</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:0.9vw; color:#F4D03F; text-align:left;">Variance(Hrs): </td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1vw; color:#FF0000;">48.1</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1vw; color:#FF0000;">10.1</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1vw; color:#FF0000;">26.9</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1vw; color:#FF0000;">13.8</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1vw; color:#FF0000;">28.9</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1vw; color:#FF0000;">15.3</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1vw; color:#FF0000;">15.3</td>
+                        <td style="background-color:#2E86C1; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1.2vw;">-158.3</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:0.9vw; color:#F4D03F; text-align:left;">AQL Count: </td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1.2vw; ">705</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1.2vw; ">111</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1.2vw; ">614</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1.2vw; ">1625</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1.2vw; ">216</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1.2vw; ">252</td>
+                        <td style="background-color:#000; text-shadow:0px 0px 5px #000; border-radius:10px; font-size:1.2vw; ">1896</td>
+                        <td style="background-color:#2E86C1; border-radius:10px; font-size:1vw;">5419</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="width: 100%; height: 60px; position: fixed; top: 0; left: 0; background-color: #424242; box-shadow: 1px 1px 5px #000;" align="center">
+                <table style="width: 100%; height: 60px; text-shadow: 0px 0px 5px #000; border-collapse: collapse; border: 0px solid red;" border="0">
+                    <tr>
+                        <td style="width: 70px;">
+                            &nbsp;
+                            <select name="cmbShift" onchange="LoadPage();setTimeout(&#39;__doPostBack(\&#39;cmbShift\&#39;,\&#39;\&#39;)&#39;, 0)" id="cmbShift" class="DropDownCSS" style="width: 60px; height: 40px; display: inline-block; font-size: 16px; border: 1px solid #3498DB;">
+                                <option selected="selected" value="All">All</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                            </select>
+                        </td>
+                        <td align="left" style="font-size: 2.5vw; color: #fff; text-shadow: 0px 0px 5px #000;">
+                            &nbsp;&nbsp;&nbsp;Brandix_01  - B Output <a style="font-size: 24px;">(Section-4)</a>
+                        </td>
+                    </tr>
+                </table>
+                <table style="font-size: 1.5vw; height: 60px; color: #fff; border-collapse: collapse; border: 0px solid red; position: fixed; right: 5px; top: 0px;" border="0">
+                    <tr>
+                        <td rowspan="2">
+                            Variance :
+                        <span id="lblVariancePcs" style="color: #fff;">853</span>
+                            <a style="font-size: 1.2vw;">Pcs</a>
+                            |
+                        <span id="lblVarianceHrs" style="color: #fff;">158.3</span>
+                            <a style="font-size: 1.2vw;">Hrs</a>
+                            |&nbsp;
+                        </td>
+                        <td style="font-size: 1.1vw; vertical-align: bottom; border-bottom: 1px solid white;">&nbsp;Cum Hrs : 1251 &nbsp;</td>
+                        <td rowspan="2">
+                            &nbsp;| TMs : 331 | Eff :
+                        <span id="lblEff" style="">64%</span>
+                            <span id="lblStatus" style="color:#FF0000;font-size: 2.5vw;">&#9660</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 1.1vw; vertical-align: text-top; text-align: center;">&nbsp;Plan Hrs : 1806 &nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <span id="lblQueryTime">-----</span>
+        </form>
+        <div id="ChartDiv" style="display: none; width: 600px; height: 350px; position: fixed; top: 0; left: 0; bottom: 0; right: 0; margin: auto; background-color: #424242; box-shadow: 0px 0px 10px #000; border-radius: 6px; z-index: 9999;">
+            <input type="button" name="btnClose" value="X" onclick="document.getElementById('ChartDiv').style.display = 'none'; document.getElementById('iconn').style.color = 'gray'; document.getElementById('fullCover').style.display = 'none';" style="color: #fff; width: 30px; height: 30px; background: red; border-radius: 300px; border: 0px solid red; position: absolute; right: -5px; top: -5px;"/>
+            <div style="color: #E5E7E9; font-size: 20px; margin-top: 5px; padding-left: 10px;">Hourly Efficiency</div>
+            <div id="chartContainerActual" style="margin-top: 12px; margin-left: 10px; height: 200px; width: 95%; background-color: transparent;" align="center"></div>
+            <div id="divChartData" style="width: 94%; height: 100px; position: absolute; left: 0; right: 0; bottom: 15px; margin-left: 3%; margin-right: 3%; background-color: #545454; border-radius: 6px;">
+                <table style='width:96%; height:80px; margin-top:10px; margin-bottom:10px; margin-left:10px; margin-right:10px; color:#fff; text-shadow:1px 1px 2px #000;'>
+                    <tr>
+                        <td style='font-weight:bold; color:yellow; background-color:#303030; border-top-left-radius:6px; border-top-right-radius:6px;'>&nbsp;&nbsp;Hour &nbsp;&nbsp;</td>
+                        <td style='border:0px solid gray; border-top-left-radius:6px; border-top-right-radius:6px; background-color:#424242; text-align:center; width:12%;'>01</td>
+                        <td style='border:0px solid gray; border-top-left-radius:6px; border-top-right-radius:6px; background-color:#424242; text-align:center; width:12%;'>02</td>
+                        <td style='border:0px solid gray; border-top-left-radius:6px; border-top-right-radius:6px; background-color:#424242; text-align:center; width:12%;'>03</td>
+                        <td style='border:0px solid gray; border-top-left-radius:6px; border-top-right-radius:6px; background-color:#424242; text-align:center; width:12%;'>04</td>
+                        <td style='border:0px solid gray; border-top-left-radius:6px; border-top-right-radius:6px; background-color:#424242; text-align:center; width:12%;'>05</td>
+                        <td style='border:0px solid gray; border-top-left-radius:6px; border-top-right-radius:6px; background-color:#424242; text-align:center; width:12%;'>06</td>
+                        <td style='border:0px solid gray; border-top-left-radius:6px; border-top-right-radius:6px; background-color:#424242; text-align:center; width:12%;'>07</td>
+                        <td style='border:0px solid gray; border-top-left-radius:6px; border-top-right-radius:6px; background-color:#424242; text-align:center; width:12%;'>08</td>
+                    </tr>
+                    <tr>
+                        <td style='font-weight:bold; color:yellow; background-color:#303030; border-bottom-left-radius:6px; border-bottom-right-radius:6px;'>&nbsp;&nbsp;Eff &nbsp;&nbsp;</td>
+                        <td style='border:0px solid gray; border-bottom-left-radius:6px; border-bottom-right-radius:6px; background-color:#2E86C1; text-align:center;'>
+                            69<a style='font-size:8px;'>%</a>
+                        </td>
+                        <td style='border:0px solid gray; border-bottom-left-radius:6px; border-bottom-right-radius:6px; background-color:#2E86C1; text-align:center;'>
+                            69<a style='font-size:8px;'>%</a>
+                        </td>
+                        <td style='border:0px solid gray; border-bottom-left-radius:6px; border-bottom-right-radius:6px; background-color:#2E86C1; text-align:center;'>
+                            69<a style='font-size:8px;'>%</a>
+                        </td>
+                        <td style='border:0px solid gray; border-bottom-left-radius:6px; border-bottom-right-radius:6px; background-color:#2E86C1; text-align:center;'>
+                            68<a style='font-size:8px;'>%</a>
+                        </td>
+                        <td style='border:0px solid gray; border-bottom-left-radius:6px; border-bottom-right-radius:6px; background-color:#2E86C1; text-align:center;'>
+                            67<a style='font-size:8px;'>%</a>
+                        </td>
+                        <td style='border:0px solid gray; border-bottom-left-radius:6px; border-bottom-right-radius:6px; background-color:#2E86C1; text-align:center;'>
+                            68<a style='font-size:8px;'>%</a>
+                        </td>
+                        <td style='border:0px solid gray; border-bottom-left-radius:6px; border-bottom-right-radius:6px; background-color:#2E86C1; text-align:center;'>--</td>
+                        <td style='border:0px solid gray; border-bottom-left-radius:6px; border-bottom-right-radius:6px; background-color:#2E86C1; text-align:center;'>--</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <i class="fas fa-chart-area" onclick="ChartShow();" id="iconn" style="position: absolute; top: 65px; left: 34px; font-size: 24px; color: gray;"></i>
+        <i class="fas fa fa-search-plus" onclick="openFullscreen();" id="FullScreeniconn" style="position: absolute; top: 65px; left: 5px; font-size: 20px; color: gray; cursor:pointer;"></i>
+        <div id="fullCover" style="display: none; width: 100%; height: 100%; background: #424242; opacity: 0.8; position: fixed; top: 0px; left: 0px; z-index: 9998;"></div>
+    </body>
+</html>
+
